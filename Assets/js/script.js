@@ -43,12 +43,6 @@ var highScore
 
 
 //startBtn.addEventListener("click", startQuiz);
-//
-
-
-
-
-
 
 //code quiz needs a start button
 //needs a timer
