@@ -1,6 +1,6 @@
-var mainEl = document.getElementById('main');
 var startBtn = document.querySelector("#start");
-var timeEl = document.getElementById('countdown'); 
+var timeEl = document.getElementById("time");
+var mainEl = document.getElementById("main");
 var initEl = document.getElementById("init");
 var qArea = document.getElementById("Q-area");
 var aArea = document.getElementById("A-area");
@@ -25,40 +25,40 @@ var reloadBtn = document.getElementById("reload");
 // object full of objects for Qs and corresponding A arrays
 
 var quizChunks = [
-  {question: "What are you wearing",
-  ans1: "pizza",
-  ans2: "rats",
-  ans3: "skin suit",
-  ans4: "music",
-  correct: "skin suit"},
+  {question: "The answer is the second one, this is a test.",
+  ans1: "Nope",
+  ans2: "Yes",
+  ans3: "Ha",
+  ans4: "Freezing",
+  correct: "Yes"},
 
-  {question: "why are we here on earth",
-  ans1: "pizza",
-  ans2: "rats",
-  ans3: "boogers",
-  ans4: "to fart around",
-  correct: "to fart around"},
+  {question: "What does API stand for?",
+  ans1: "A Person Internal",
+  ans2: "Active Pharmaceutical Ingredient",
+  ans3: "Accelerated Paradigm Incinerator",
+  ans4: "Application Programming Interfaces",
+  correct: "Application Programming Interfaces"},
 
-  {question: "what is food",
-  ans1: "pizza",
-  ans2: "rats",
-  ans3: "food",
-  ans4: "all of the above",
-  correct: "all of the above"},
+  {question: "What is JavaScript?",
+  ans1: "It is a widely used scripting language that adds functionality and interactivity to a webpage.",
+  ans2: "Coffee lovers special at the local store!",
+  ans3: "This is the script writers use to make movies.",
+  ans4: "JavaScript is html.",
+  correct: "It is a widely used scripting language that adds functionality and interactivity to a webpage."},
 
-  {question: "who deserves kindness",
-  ans1: "steve",
-  ans2: "everyone but steve",
-  ans3: "hugh grant",
-  ans4: "hugh grant",
-  correct: "everyone but steve"},
+  {question: "What does local storage do?",
+  ans1: "Stores info onto your desktop",
+  ans2: "Adds all passwords to all computers you have ever used, EVER",
+  ans3: "Store data in the user's browser",
+  ans4: "Stores data in hidden files that you can never find",
+  correct: "Store data in the user's browser"},
 
-  {question: "why am i sad",
-  ans1: "because of the horrors",
-  ans2: "pizza",
-  ans3: "rats", 
-  ans4: "hugh grant",
-  correct: "because of the horrors"},
+  {question: "How cool is Lindsey?",
+  ans1: "Very",
+  ans2: "Only to unique cool people",
+  ans3: "Ha whO", 
+  ans4: "Why are we questioning this",
+  correct: "Why are we questioning this"},
 ];
 
 var current = 0;
@@ -119,7 +119,7 @@ function check(event) {
   
   if (event.target.textContent == right) {
     next();
-    feedback.innerHTML = "good doggy";
+    feedback.innerHTML = "Very GOOD";
     feedbackExpiration = setTimeout(function () {
       feedback.innerHTML = "";
     }, 1000);
@@ -127,7 +127,7 @@ function check(event) {
   else {
     punish(10);
     next();
-    feedback.innerHTML = "how dare you";
+    feedback.innerHTML = "But why";
     feedbackExpiration = setTimeout(function () {
       feedback.innerHTML = "";
     }, 1000);
@@ -181,9 +181,9 @@ function endQuiz() {
   form.classList.toggle("hide");
   timeEl.classList.toggle("hide");
   message.textContent = 
-  "I'm so proud of you just for existing. Your score is " + secondsLeft + ".";
+  "Thank you for participating Your score is " + secondsLeft + ".";
   initials.textContent = 
-  "put your initials here or whatever you feel like"
+  "Put your initials here, please be mature!"
 }
 
 submitBtn.addEventListener("click", record);
