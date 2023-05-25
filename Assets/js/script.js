@@ -21,9 +21,7 @@ var scoresArea = document.getElementById("scores-area");
 var scoreList = document.getElementById("scorelist");
 var reloadBtn = document.getElementById("reload");
 
-
-// object full of objects for Qs and corresponding A arrays
-
+// question arrays
 var quizChunks = [
   {question: "The answer is the second one, this is a test.",
   ans1: "Nope",
