@@ -18,7 +18,7 @@ THEN I can save my initials and score
 
 ![screenshot](assets/images/javashot.PNG)
 
-deployed application: 
+deployed application: https://lindseyisaac.github.io/JavaQuiz/
 
 
 ## Credits
