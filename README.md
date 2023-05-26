@@ -16,7 +16,7 @@ THEN I can save my initials and score
 
 ## Usage
 
-![screenshot](Assets/images/javashot.PNG)
+![screenshot](assets/images/javashot.PNG)
 
 deployed application: 
 
